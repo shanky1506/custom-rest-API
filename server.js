@@ -12,6 +12,7 @@ db.once('open',()=>console.log('Connected to Database'))
 app.use(express.json())
 
 const subRouter= require('./routes/subscribers')
+
 app.use('/subs',subRouter)
 
 app.listen(3000,()=>console.log('Server Started running at Port 3000'))
